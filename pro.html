@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>SLR COMPANY</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+
+function check(){
+	var username = document.getElementById("username").value.length ;
+		var password = document.getElementById("password").value.length ;
+	
+	
+	if(username<6 || password<6)
+	{
+		confirm("fill atleast 6");
+		
+	}
+	else if(username==password){
+	confirm("succesful");
+	}
+	
+else{
+	confirm("failed");
+}
+}
+</script>
+
+
+</head>
+
+
+<body>
+
+<h1>MY COMPANY</h1>
+<center>
+<table class="table1" >
+<tr>
+<td><img src="amazon.jpg" alt="cannot display image" height="150" width="300"></td>
+<td><strong>AMAZON SERVICES</strong></td>
+</tr>
+</table>
+</center>
+
+
+<button onclick="document.getElementById('demo').innerHTML = Date()">TIME & DATE</button>
+
+
+<p id="demo"></p>
+
+
+
+<select>
+  <option value="department">department</option>
+  <option value="amazon video">video</option>
+  <option value="movies">movies</option>
+  <option value="health">health</option>
+</select>
+
+<form id="ROW" action="" method="post" onsubmit=" check();">
+<p>REGISTRATION/SIGN IN</p>
+
+<div class="row">
+<label for="username">Name:</label>
+
+ <input type="text" id="username" name="username" ></br></br></div>
+ 
+ <div class="row">
+ <label for="password">password:</label>
+
+ <input type="password" id="password" name="psw"></br>
+ </div>
+ 
+<input type="submit" value="Submit">
+
+</form>
+
+
+<table>
+<tr>
+<td><a href="https://www.amazon.com/b/ref=sv_atv_2?_encoding=UTF8&node=2858905011" style=" text-decoration:none">video</a></td>
+<td><a href="https://www.amazon.com/gp/video/watchlist/ref=sv_atv_7" style=" text-decoration:none">movie watchlist</a></td>
+<td><a href="https://www.amazon.com/b/ref=sv_atv_1?_encoding=UTF8&node=2864549011" style=" text-decoration:none">tv</a></td>
+<td><a href="https://www.amazon.com/gp/video/storefront/ref=sv_atv_0?ie=UTF8&merchId=originals1" style=" text-decoration:none">originals</a></td>
+</tr>
+
+
+<tr>
+<td><a href="https://www.amazon.com/gp/css/homepage.html/ref=ya" style=" text-decoration:none">orders</a></td>
+<td><a href="https://www.amazon.com/gp/registry/wishlist/3SFJI00XW1IBO/ref=nav_wishlist_lists_1" style=" text-decoration:none">shopping list</a></td>
+<td><a href="https://www.amazon.com/gp/css/homepage.html/ref=ya" style=" text-decoration:none">your account</a></td>
+<td><a href="https://www.amazon.com/gp/yourstore/ref=recs" style=" text-decoration:none">recommendations</a></td>
+</tr>
+</table>
+
+
+
+<footer>
+
+  <p>Posted by: lasya reddy</p>
+  <p>Contact information:email-- lasya.reddy2002@gmail.com</p>
+  <p>&copy; 2017</p>
+ 
+
+</footer>
+
+
+
+</body>
+</html>
+
