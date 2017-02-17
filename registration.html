@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> TEAM UMKC - Registration </title>
+<link rel="stylesheet" type="text/css" href="mainpage.css">
+<link href="mainpage.asp">
+<script type="text/javascript">
+function validation(){
+var text1 = document.getElementById('username').value;
+var text2 = document.getElementById('password').value;
+if(text1== "" || text2 == ""){
+alert("Please enter username and password");
+}
+else if(text1==text2){
+
+confirm("succesfully logged in. Goto profile page");
+}
+else{
+alert("Enter correct login details");
+}
+}
+
+</script>
+</head>
+<body>
+<header>
+<div id="header">
+<h1>
+<img src="m.png" alt="Mikut" width="100" height="100" align="left">
+<p> TEAM UMKC</p>
+</h1>
+</div>
+</header>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+
+<h2 id="reg"> Login Details </h2>
+<form id="theForm" action="" method="post" onsubmit="validation();">
+<p>
+
+<div class="row">
+<label for="username"> Username:</label>   
+<input type="text" id="username" name="username"><br>
+ </div>
+<div class="row">
+<label for="psw"> Password:</label>   
+<input type="password" id="password" name="psw"><br>
+ </div>
+
+<input type="submit" value="Submit">
+</p>
+
+
+
+</body>
+</html>
