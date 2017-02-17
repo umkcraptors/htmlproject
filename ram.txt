@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<button onclick="document.getElementById('demo').innerHTML = date()"> TIME & DATE </button>
+
+
+
+</head>
+</html>

@@ -1,0 +1,44 @@
+body{
+	background-color:#ffffff;
+
+}
+table,th,td 
+   {
+    border: 2px solid black;
+    border-collapse:collapse;
+    padding: 5px;
+    margin-bottom:50px;
+    text-align:center;
+    }
+table{
+    margin-top:10px;
+    border-spacing: 15px;
+    width:100%;
+     }
+h1{
+	background-image:url("winter-header.gif");
+    text-align:center;
+	color:#262626;
+	height:150px;
+	width:100%;
+    background-size:100%;
+    background-repeat: no-repeat;
+  }
+p{
+    font-size:150%;
+    font-weight:bold;
+ }
+.table1{
+    margin:0px;
+    background-color:#d9d9d9;
+   }
+.td1,.td2
+{
+    margin:0;
+}
+footer
+{
+    background-color:#d9ddd9;
+	margin:5px 0px 0px 0px;
+
+}

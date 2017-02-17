@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SNR PRODUCTS</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script>
+
+function check()
+{
+  var username = document.getElementById("username").value.length;
+  var password = document.getElementById("password").value.length;
+  
+  if(username<10 || password<10)
+  {
+		confirm(" Enter atlesat 10 characters")
+  }
+  else if(username == password)
+  {
+		confirm("Successfully Loggedin")
+  }
+  else
+  {
+		confirm("Failure Login");
+  }
+}
+function date(){
+var text=document.getElementById("demo").innerHTML=Date();
+document.write(text);
+}
+</script>
+
+<style>
+a.ex1:hover, a.ex1:active {color: red;}
+a.ex2:hover, a.ex2:active {background:black; color:white;}
+a.ex3:hover, a.ex3:active {background: red;}
+a.ex4:hover, a.ex4:active {font-family: monospace; font-weight:bold;}
+a.ex5:hover, a.ex5:active {font-style:italic;}
+a.ex6:hover, a.ex6:active {font-variant:small-caps;}
+</style>
+</head>
+
+<body>
+<h1>SNR PRODUCTS</h1>
+
+
+<center>
+<table class="table1">
+<tr>
+<td class="td1"><img src="header.jpg" ></td>
+<td class="td2">Production Team SNR</td>
+</tr>
+</table>
+</center>
+<p id ='demo'>
+<button onclick="date();"> TIME & DATE </button>
+</p>
+
+<form id="user" action="" method="post" onsubmit="check();">
+<p>USER SIGNIN</p>
+<form>
+  username:<br>
+  <input type="text" name="firstname">
+  <br>
+  password:<br>
+  <input type="text" name="lastname">
+  <br><br>
+  <input type="submit" value="Submit">
+  
+</form>
+
+
+
+<table>
+  <tr>
+    <th colspan="2">Products</th>
+  </tr>
+  <tr>
+    <td><a class="ex1" href="http://www.aeropostale.com/shop/index.jsp?categoryId=3534619" style="text-decoration:none;">PRO 1</td>
+    <td><a class="ex2" href="http://www.aeropostale.com/girls-clothing/category.jsp?categoryId=3534623" style="text-decoration:none;" >PRO 2</td>
+  </tr>
+  <tr>
+    <td><a class="ex3" href="https://www.ae.com/men-tops/web/s-cat/10025?cm=sUS-cUSD&navdetail=mega:mens:c2:p1" style="text-decoration:none;">PRO 3</td>
+    <td><a class="ex4" href="https://www.ae.com/women-skinny-jeans/web/s-cat/1990002?cm=sUS-cUSD&guide=jean&navdetail=mega:cat7010140:c1:p3" style="text-decoration:none;">PRO 4</td>
+  </tr>
+  <tr>
+    <td><a class="ex5" href="https://www.ae.com/men-clearance-tops/web/s-cat/6470584?cm=sUS-cUSD&navdetail=mega:clearance:c2:p2" style="text-decoration:none;">PRO 5</td>
+    <td><a class="ex6" href="https://www.ae.com/men-clearance-aeo-long-sleeve-crew-t-shirt-black/web/s-prod/2171_8566_001?cm=sUS-cUSD&catId=cat90070" style="text-decoration:none;">pro 6</td>
+  </tr>
+</table>
+
+<div><footer>
+<p>Posted by:<strong>SNR PRODUCTS</strong></p>
+<p>For Info Contact : <a href="aeropostale.com" style="text-decoration:none;"><strong>Email</strong></a></p>
+<p>&copy; 2017</p>
+</footer></div>
+
+
+</body>
+</html>
+
+
+
