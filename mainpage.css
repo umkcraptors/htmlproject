@@ -21,32 +21,41 @@ margin:auto;
 padding:auto;
 }
 table{
-	
+	opacity: 0.4;
+    filter: alpha(opacity=40)
 	margin-top:auto;
 	padding:auto;
 	position:relative;
+	
 
+}
+a:link {
+	color:black;
+	text-decoration:none;
 }
 
 tr{
+	
 	border:2px solid black;
 	border-radius:10px;
-	background-color:none;
-	color:#ff0000;
+	
+	color:black;
 	margin:auto;
 	padding:auto;
 }
-td:hover{background-color:white;}
+td:hover{background-color:#76b0f0;}
 td{
 	border:2px solid black;
-	border-radius:10px;
-	background-color:none;
-	color:#ff0000;
-	margin:auto;
-	padding:auto;
+	border-radius:8px;
+	background-color: #B2FFFF;
+	font-family:verdana;
+	font-size:18px;
+	color:black;
+	text-align:center;
 	text-decoration:none;
 	margin:20px 20px 20px 20px;
-	padding: 40px 40px 40px 40px;
+	padding: 10px;
+	border-width:3px;
 }
 #theForm {
 	color:white;
@@ -102,5 +111,4 @@ background-color:white;
    }
 .button:active {
    border-top-color: #1b435e;
-   background: #1b435e;
-   }
+   background: #1b43
