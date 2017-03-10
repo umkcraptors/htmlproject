@@ -1,0 +1,20 @@
+if(document.calc.Email.value == "" )
+    {
+        alert("Please fill the valid email !");
+         return false;
+    } 
+	
+    if(document.calc.dob.value.length != 10)
+	{
+	      alert("Please fill the valid dob !");
+         return false;
+	}
+	
+	
+	
+	var d = document.calc.dob.value;
+    var pattern = /^([0-9]{2})-([0-9]{2})-([0-9]{4})$/;
+    if (d == null || d == "" || !pattern.test(d)) {
+        alert( "Invalid date of birth\n");
+        return false;
+    }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>REGISTRATION FORM</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script type="text/javascript" src="registrationform.js">
+</script>
+
+</head>
+<body>
+<p>TECH CITY REGISTRATION</p>
+<form id="ROW" name="calc">
+<div class="row">
+<label for="Name">Name**:</label>
+<input id = "Name" type="text"  name="Name" required></br></br></div>
+ 
+<div class="row">
+<label for="Email">Email**:</label>
+<input id= "email" type="text"  placeholder="me@example.com" name="Email" required></br></div>
+
+<div class="row">
+<label for="dob">DOB:</label>
+<input id ="dob" type="date"  name="dob"></br></div>
+
+<div class="row">
+<label for="Phone Number">Phone Number:</label>
+<input id ="tel" type="tel"  name="tel"></br></div>
+
+<div class="row">
+<label for="employed">Employed:</label>
+<input type='radio' name='radioEmployed'> yes
+<input type='radio' name='radioEmployed'> no</div>
+
+<div class="row">
+<label for="sex">Sex:</label>
+
+<input type='radio' name='radioSex'>Male</input>
+<input type='radio' name='radioSex'> Female</input>
+</div>
+
+<div class="row">
+<label for="qualifications">qualifications:</label>
+<input type="checkbox" name="bachelors" > bachelors <br/>
+<input type="checkbox" name="masters" > masters <br/>
+<input type="checkbox" name="diploma" > diploma <br/></div>
+
+<div class="row">
+<label for="experience">Experience in years:</label>
+<input id ="number" type="number" min="0" max="30" step="0.1"></br></div>
+ 
+ 
+
+</form>
+<button onclick = "return validate();"> Register</button> <br>
+  <button type="button" onclick="clearForm();"> Clear </button>
+</body>
+</html>

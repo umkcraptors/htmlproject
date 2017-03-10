@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MATH FORM</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
+
+
+
+
+<script>
+
+function add(){
+	var Number1 = parseInt(document.calc.Number1.value) ;
+		var Number2 = parseInt(document.calc.Number2.value) ;
+	var res = Number1+Number2;
+	 var res1=document.calc.result.value;
+	 if (res == res1) {
+	 alert("Resul is correct");
+	 	 }
+		 else{
+		 alert("Result is wrong");
+		 }
+	 }
+	 
+	function sub(){
+	var Number1 = parseInt(document.calc.Number1.value) ;
+		var Number2 = parseInt(document.calc.Number2.value) ;
+	var result = Number1-Number2;
+	 document.calc.result.value = result;
+	 } 
+	 
+	 function mul(){
+	var Number1 = parseInt(document.calc.Number1.value) ;
+		var Number2 = parseInt(document.calc.Number2.value) ;
+	var result = Number1*Number2;
+	 document.calc.result.value = result;
+	 
+	 } 
+	 
+	 function div(){
+	var Number1 = parseInt(document.calc.Number1.value) ;
+		var Number2 = parseInt(document.calc.Number2.value) ;
+	var result = Number1/Number2;
+	 document.calc.result.value = result;
+	 } 
+	 
+	 function com(){
+	var Number1 = parseInt(document.calc.Number1.value) ;
+		var Number2 = parseInt(document.calc.Number2.value) ;
+	var text;
+			if(Number1> Number2)
+	{
+		 text = "Number1 is greater than Number2";
+		
+	} 
+	else if(Number1==Number2){
+	text = "Number1 is equal to Number2";
+	} 
+	
+else{
+	text = "Number1 is less than Number2";
+	 
+} document.calc.result.value = text;
+}
+	
+	 
+	
+	
+</script>
+
+
+
+
+
+</head>
+
+<body>
+<p>MATH WORKSHEET</p>
+<form id="ROW" name="calc" onsubmit ="check();">
+
+<div class="row">
+<label for="Number1">Number1:</label>
+<input type="text"  name="Number1" ></br></br></div>
+ 
+<div class="row">
+<label for="Number2">Number2:</label>
+<input type="text"  name="Number2"></br></div>
+
+ <div class="row">
+ <label for="result">result:</label>
+ <input type="text"  name="result"></br></div>
+
+
+</form>
+
+
+switch (action){
+case add :{
+
+}
+
+
+
+
+
+
+
+<button onclick="add();">ADD</button>
+<button onclick="sub();">SUBTRACT</button>
+<button onclick="mul();">MULTIPLY</button>
+<button onclick="div();">DIVISION</button>
+<button onclick="com();">COMPARE</button>
+<button onclick="val();">VALIDATE</button>
+<p id="demo"></p>
+
+
+
+
+</body>
+
+</html>
